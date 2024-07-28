@@ -2,16 +2,21 @@
   "name": "ammarpro",
   "version": "0.1.0",
   "private": true,
+  
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "postinstall": "npx prisma generate",
     "lint": "next lint"
+    
   },
   "dependencies": {
+    "@prisma/client": "^5.17.0",
+    "next": "14.2.5",
+    "prisma": "^5.17.0",
     "react": "^18",
-    "react-dom": "^18",
-    "next": "14.2.5"
+    "react-dom": "^18"
   },
   "devDependencies": {
     "postcss": "^8",
